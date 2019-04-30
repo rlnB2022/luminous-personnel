@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    min-height: 15vh;
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.logo {
+    display: flex;
+    color: #000;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 75%;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.burger {
+    display: none;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px;
+}
+
+.my-header {
+    position: relative;
+    height: 100vh;
+}
+
+.bg-image-1, .bg-image-2, .bg-image-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-image-1 {
+    background-image: url('images/handshake.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation:fade 16s infinite;
+    -webkit-animation:fade 16s infinite;
+}
+
+.bg-image-2 {
+    background-image: url('images/construction.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fade2 16s infinite;
+    -webkit-animation: fade2 16s infinite;
+}
+
+.bg-image-3 {
+    background-image: url('images/hospitality.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fade3 16s infinite;
+    -webkit-animation: fade3 16s infinite;
+}
+
+.nav-links li a {
+    font-size: 20px;
+}
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  16.666% { opacity: 1}
+  35% { opacity: 0}
+  83.334% {opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  16.666% {opacity: 0}
+  35% { opacity: 1}
+  51.666% { opacity: 1 }
+  68.332% {opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  51.63% { opacity: 0}
+  70% { opacity: 1}
+  83.334% {opacity: 1}
+  100% { opacity: 0}
+}
+
+/* Float Shadow */
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        text-align: center;
+        padding: 50px;
+    }
+
+    .hero-text h1 {
+        color: #fff;
+        font-size: 75px;
+        text-transform: uppercase;
+    }
+
+    .hero-text h3 {
+        color: #fff;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+
+    .hero-text .btn {
+        border: 2px solid white;
+        padding: 14px 28px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        margin: 15px 10px;
+    }
+
+    .hero-text .btn-red {
+        background-color: #ff9800;
+        color: white;
+    }
+
+    .hero-text .btn-blue {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    .hero-text .btn-red:hover {
+        background: #a86500;
+        color: white;
+    }
+
+    .hero-text .btn-blue:hover {
+        background: rgb(24, 106, 173);
+        color: white;
+    }
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 85vh;
+        top: 15vh;
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        color: #fff;
+    }
+    
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+}
