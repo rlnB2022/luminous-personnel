@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Cinzel', serif;
+}
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Cinzel', serif;
     min-height: 15vh;
     background-color: rgba(255,255,255, 0.5);
 }
@@ -216,6 +218,263 @@ nav {
         color: white;
     }
 
+    .statement {
+        min-height: 40vh;
+        position: relative;
+        background-color: rgb(226, 224, 224);
+    }
+
+    .statement-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    .statement-inner h2 {
+        font-weight: bold;
+        font-size: 50px;
+        color: #000;
+    }
+
+    .statement-inner p {
+        font-weight: bold;
+        color: #000;
+        font-size: 20px;
+    }
+
+    .benefits {
+        width: 100%;
+        height: 325px;
+        font-size: 22px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+
+      .benefits-header {
+          height: 80px;
+          padding: 25px;
+      }
+
+      .benefits-header h1 {
+          font-size: 35px;
+          font-weight: bold;
+          color: #000;
+          text-align: center;
+      }
+
+      .benefits-inner {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .box {
+        width: 300px;
+        height: 300px;
+        margin-right: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .box h1 {
+        z-index: 1;
+        color: #fff;
+      }
+      
+      .box-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .3;
+        position: absolute;
+      }
+      
+      #box-img-1 {
+        background-image: url("images/construction-2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      #box-img-2 {
+        background-image: url("images/office.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      #box-img-3 {
+        background-image: url("images/forklift.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    
+    .features {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .testimonials {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 40vh;
+        position: relative;
+    }
+
+    .testimonial-container {
+        width: 50%;
+        height: 40vh;
+        display: none;
+        margin: 0 auto;
+      }
+      
+      .left-side {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .custom-user {
+        border-radius: 50%;
+        padding: 50px;
+        background-color: #ddd;
+      }
+      
+      .right-side {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .right-side-inner {
+        width: 80%;
+        height: 80%;
+      }
+      
+      .top-part {
+        width: 100%;
+        padding: 20px;
+        height: 75%;
+        display: flex;
+        position: relative;
+      }
+      
+      .left-quote {
+        width: 10%;
+      }
+      
+       .right-quote {
+        width: 10%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      
+      .actual-quote {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      
+      .actual-quote p {
+        display: inline-block;
+      }
+
+      .stars {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          color: gold;
+      }
+
+      .star-spacing {
+          margin-left: 20px;
+      }
+
+      .testimonial-name {
+          display: flex;
+          justify-content: center;
+          padding-top: 20px;
+          color: #fff;
+          font-size: 20px;
+      }
+
+
+      /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: #2196F3;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+  
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+  
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: #2196F3;
+        color: #fff;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+  
+    .active, .dot:hover {
+        background-color: #2196F3;
+    }
+  
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 40%;
@@ -223,6 +482,7 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+
     body {
         overflow-x: hidden;
     }
@@ -253,4 +513,7 @@ nav {
         transform: translateX(0%);
     }
 
+    .benefits-inner {
+        display: block;
+    }
 }
