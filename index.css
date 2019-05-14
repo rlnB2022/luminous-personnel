@@ -72,7 +72,7 @@ nav {
     background-image: url('images/handshake.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    animation:fade 16s infinite;
+    animation: fade 16s infinite;
     -webkit-animation:fade 16s infinite;
 }
 
@@ -444,6 +444,7 @@ nav {
         border-radius: 50%;
         padding: 25px;
         background-color: #ddd;
+        z-index: 98;
       }
       
       .right-side {
@@ -577,7 +578,6 @@ nav {
       height: 20vh;
       text-align: center;
       position: relative;
-      z-index: -1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -595,11 +595,21 @@ nav {
     .social {
       display: space-around;
       letter-spacing: 30px;
-      color: #2196F3;
+      z-index: 99;
     }
 
     .social a {
       cursor: pointer;
+      transition-duration: 0.4s;
+    }
+
+    .social a:link,  .social a:visited {
+      color: #2196F3;
+    }
+
+    .social a:hover {
+      color: #ff9800;
+
     }
   
   @-webkit-keyframes fade_arrows {
