@@ -36,12 +36,11 @@ nav {
     list-style: none;
 }
 
-.nav-links a {
+.nav-links li a {
     color: #000;
     text-decoration: none;
     letter-spacing: 5px;
     font-weight: bold;
-    font-size: 16px;
 }
 
 .burger {
@@ -622,9 +621,128 @@ nav {
     to {opacity: 1}
   }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
     .nav-links {
-        width: 40%;
+        width: 60%;
+    }
+
+    .nav-links a {
+      letter-spacing: 5px;
+      font-weight: bold;
+    }
+
+    .hero-text {
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .statement-inner {
+      width: 100%;
+    }
+
+    .statement-inner h2 {
+      font-size: 30px;
+    }
+
+    .statement-inner p {
+      font-size: 18px;
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .aboutus-inner {
+      width: 100%;
+      height: 90%;
+    }
+
+    .orange-circle {
+      background-color:  rgb(255, 123, 0);
+      position: absolute;
+      top: 40%;
+      left: 20px;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .orange-circle p {
+      padding-top: 110px;
+    }
+
+    .blue-circle {
+      background-color: rgba(33, 150, 243,.9);
+      position: absolute;
+      top: 50%;
+      left: 220px;
+      transform: translateY(-50%);
+      font-size: 25px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .blue-circle p {
+      padding-top: 110px;
+    }
+
+    .orange-circle, .blue-circle {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+    }
+
+    .benefits-inner {
+      width: 100%;
+    }
+
+    .testimonial-container {
+      width: 90%;
+    }
+
+    .left-side {
+      margin-left: 70px;
+      width: 30%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left-side img {
+      width: 420px;
+      height: 420px;
+    }
+
+    .right-side {
+      margin-left: 30px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-side-inner {
+      width: 90%;
+    }
+    
+    .left-quote i {
+      position: absolute;
+      left: 15px;
+      font-size: 36px;
+    }
+
+    .right-quote i {
+      position: absolute;
+      right: 15px;
+      font-size: 36px;
+      bottom: 5px;
+    }
+
+    .actual-quote {
+      font-size: 20px;
     }
 }
 
@@ -660,7 +778,123 @@ nav {
         transform: translateX(0%);
     }
 
-    .benefits-inner {
-        display: block;
+    .hero-text {
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .statement-inner {
+      width: 100%;
+    }
+
+    .statement-inner h2 {
+      font-size: 30px;
+    }
+
+    .statement-inner p {
+      font-size: 15px;
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .benefits {
+      height: 1600px;
+      display: block;
+    }
+
+    .box {
+      width: 500px;
+      height: 500px;
+      margin-right: 0px;
+    }
+
+    .box h1 {
+      font-size: 30px;
+    }
+
+    .aboutus {
+      height: 85vh;
+      background-color: rgb(226, 224, 224);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .aboutus-inner {
+      width: 100%;
+      height: 70vh;
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .aboutus-left {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .aboutus-left h2 {
+      padding-bottom: 10px;
+      font-size: 45px;
+      margin: 0 auto;
+    }
+
+    .aboutus-right {
+      width: 100%;
+      height: 50%;
+      margin-top: 40px;
+    }
+
+    .orange-circle {
+      background-color:  rgb(255, 123, 0);
+      position: absolute;
+      top: 0;
+      left: 100px;
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .orange-circle p {
+      padding-top: 110px;
+    }
+
+    .blue-circle {
+      background-color: rgba(33, 150, 243,.9);
+      position: absolute;
+      top: 40px;
+      left: 300px;
+      font-size: 25px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .blue-circle p {
+      padding-top: 110px;
+    }
+
+    .orange-circle, .blue-circle {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+    }
+
+    .left-side {
+      display: none;
+    }
+
+    .right-side {
+      width: 100%;
+    }
+
+    .testimonial-container {
+      width: 100%;
+      height: 30vh;
+      display: none;
     }
 }
