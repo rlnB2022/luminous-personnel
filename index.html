@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <title>Luminous Personnel</title>
 </head>
@@ -18,9 +20,8 @@
             </div>
 
             <ul class="nav-links">
-                <li class="hvr-float-shadow"><a href="#">Job Seekers</a></li>
-                <li class="hvr-float-shadow"><a href="#">Employers</a></li>
-                <li class="hvr-float-shadow"><a href="#">About</a></li>
+                <li class="float-shadow"><a href="#contact-us">Contact</a></li>
+                <li class="float-shadow"><a href="#about-link">About</a></li>
             </ul>
 
             <div class="burger">
@@ -35,54 +36,47 @@
         <div class="bg-image-2"></div>
         <div class="bg-image-3"></div>
 
-        <!-- hero text -->
-        <div class="hero-text">
-            <h1>OUR MISSION</h1>
-            <h3>Connecting great employers with great employees</h3>
-            <button class="btn btn-red">Job Seekers</button>
-            <button class="btn btn-blue">Employers</button>
-        </div>
-
     </header>
+
+    <!-- hero text -->
+    <div class="hero-text">
+        <h1>OUR MISSION</h1>
+        <h2>Connecting great employers with great employees</h2>
+    </div>
 
     <section class="statement">
         <div class="statement-inner">
             <h2>Dallas/Fort-Worth <span class="staffing">Staffing</span> Agency</h2>
-            <p>Luminous Personnel is a Dallas-Ft Worth staffing firm based in Dallas, Tx near the Galleria
-                    Mall. With over 25yrs combined experience our recruiters and staff are well trained to assist in
-                    any short or long term assignments.</p>
+            <p>Luminous Personnel is a Dallas-Fort Worth staffing firm based in Dallas, Texas near the Galleria
+                    Mall. With over 25 years of combined experience, our recruiters and staff are well-trained to assist in
+                    any short or long-term assignments.</p>
         </div>
     </section>
 
-    <div class="benefits-header">
-        <h1>Our Specialties</h1>
-    </div>
-
     <section class="benefits">
+        <h1 class="our-specialties">Our Specialties</h1>
+
         <div class="benefits-inner">
             <div class="box" id="box-img-1">
-            <div class="box-overlay"></div>
-                <h1>Construction</h1>
+                <h2>Admin</h2>
             </div>
 
             <div class="box" id="box-img-2">
-                <div class="box-overlay"></div>
-                <h1>Admin</h1>
+                <h2>Construction</h2>
             </div>
       
             <div class="box" id="box-img-3">
-                <div class="box-overlay"></div>
-                <h1>Hospitality</h1>
+                <h2>Hospitality</h2>
             </div>
             
         </div>
-        
+
     </section>
 
-    <section class="aboutus">
+    <section class="aboutus" id="about-link">
+        <h2>About us</h2>
         <div class="aboutus-inner">
             <div class="aboutus-left">
-                <h2>About us</h2>
                 <p>With our growing database of thousands of current, and prospective employees, we can source the perfect candidate for your company.</p>
                 
                 <p>Contingent labor and light industrial staffing is our specialty, which means we have extensive industry knowledge that allows us to find the ideal fit for candidates and employers. Our workers will be there, when and where you want them, for as long as you require them.</p>
@@ -110,41 +104,88 @@
             </div>
 
             <div class="right-side">
-                <div class="right-side-inner">
-                    <div class="top-part">
-                        <div class="left-quote">
-                            <i class="fas fa-quote-left fa-4x"></i>
-                        </div>
+                <div class="top-part">
+                  <div class="left-quote">
+                    <i class="fas fa-quote-left fa-4x"></i>
+                  </div>
 
-                        <div class="actual-quote">
-                            <p>This is where the testimonial text would go if you had an employee who left you a good review.  This needs to be changed, along with about 3-4 other testimonials.</p>
-                        </div>
+                  <div class="actual-quote">
+                      <p>Thanks for all your help.  I am impressed by your ability and professionalism.”</p>
+                  </div>
 
-                        <div class="right-quote">
-                            <i class="fas fa-quote-right fa-4x"></i>
-                        </div>
-                    </div>
+                  <div class="right-quote">
+                      <i class="fas fa-quote-right fa-4x"></i>
+                  </div>
+                </div>
 
-                    <div class="bottom-part">
-                        <div class="stars">
-                            <i class="fas fa-star fa-2x"></i>
-                            <i class="fas fa-star fa-2x star-spacing"></i>
-                            <i class="fas fa-star fa-2x star-spacing"></i>
-                            <i class="fas fa-star fa-2x star-spacing"></i>
-                            <i class="fas fa-star fa-2x star-spacing"></i>
-                        </div>
-
-                        <div class="testimonial-name">
-                                <p>~ Lisa Beyer (WFG Warehouse Services, Inc.)</p>
-                        </div>
-                    </div>
+                <div class="bottom-part">
+                  <div class="testimonial-name">
+                      <p>~ Naito Uki</p>
+                  </div>
                 </div>
             </div>
-
          </div>
 
-        <!-- Dots -->
-        <div class="testimonial-dots">
+         <div class="testimonial-container">
+
+            <div class="left-side">
+                <img src="images/profile-pic-2.jpg" class="custom-user" alt="Profile image" />
+            </div>
+
+            <div class="right-side">
+                <div class="top-part">
+                  <div class="left-quote">
+                    <i class="fas fa-quote-left fa-4x"></i>
+                  </div>
+
+                  <div class="actual-quote">
+                      <p>I am thrilled with my new job and this is largely due in part to the care taken by Luminous to find me a position which closely matched my skills and personality. In my opinion, Luminous Personnel offers a very professional service.</p>
+                  </div>
+
+                  <div class="right-quote">
+                      <i class="fas fa-quote-right fa-4x"></i>
+                  </div>
+                </div>
+
+                <div class="bottom-part">
+                  <div class="testimonial-name">
+                      <p>~ Satya Nadella</p>
+                  </div>
+                </div>
+            </div>
+         </div>
+
+         <div class="testimonial-container">
+
+            <div class="left-side">
+                <img src="images/profile-pic-3.jpg" class="custom-user" alt="Profile image" />
+            </div>
+
+            <div class="right-side">
+                <div class="top-part">
+                  <div class="left-quote">
+                    <i class="fas fa-quote-left fa-4x"></i>
+                  </div>
+
+                  <div class="actual-quote">
+                      <p>I really appreciated the time and effort that the staff at Luminous put into finding me a great job. Thank you very much!</p>
+                  </div>
+
+                  <div class="right-quote">
+                      <i class="fas fa-quote-right fa-4x"></i>
+                  </div>
+                </div>
+
+                <div class="bottom-part">
+                  <div class="testimonial-name">
+                      <p>~ Phillip Ramos</p>
+                  </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- Dots -->
+         <div class="testimonial-dots">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
@@ -152,13 +193,33 @@
     </section>
 
     <section class="footer">
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
-            <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
-            <a href="#"><i class="fas fa-envelope-square fa-3x"></i></a>
+        <div class="footer-container">
+            <p class="contactus" id="contact-us">Contact Us</p>
+            <div class="footer-middle">
+                <div class="footer-left">
+                    <img src="./images/luminous-logo.png" alt="" class="footer-logo">
+                </div>
+            
+                <div class="footer-right">
+                    <div class="contactinfo">
+                        <i class="fas fa-phone"></i><p><strong>Phone:</strong> 972-773-9648</p>
+                    </div>
+
+                    <div class="contactinfo">
+                        <i class="fas fa-envelope"></i><p><strong>Email:</strong> <a href="mailto:dallas@luminouspersonnel.com">dallas@luminouspersonnel.com</a></p>
+                    </div>
+                    
+                    <div class="contactinfo address">
+                        <i class="fas fa-map-marker-alt"></i><p><strong>Address:</strong> 2351 W. Northwest Hwy #3270, Dallas, TX 75220</p>
+                    </div>
+
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2351%20w%20northwest%20hwy%20%233270%2C%20dallas%2C%20tx%2075220&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}</style></div>
+                    
+                </div>
+            </div>
+            <p class="cpy">Copyright &copy; <span class="todays-date"></span>. All rights reserved.</p>
         </div>
-        
-        <p>Copyright &copy; 2019. All rights reserved.</p>
+
     </section>
 
     <script src="index.js"></script>
