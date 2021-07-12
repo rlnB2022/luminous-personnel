@@ -3,4 +3,14 @@ Luminous Personnel
 
 # Project Description
 
-A startup job placement company reached out to me to create an online prescence. They were in a rush and asked if this was something I could do.
+A startup job-placement company reached out to me to create an online prescence.
+
+# Technologies Used
+
+* HTML 5
+* CSS 3
+* Javascript
+* SCSS
+
+# Launch
+
