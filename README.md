@@ -24,4 +24,4 @@ Since I was very new to front-end development, I utilized Google, StackOverflow 
 
 # Takeaways
 
-Although the website is very basic, I am very proud of the effort I gave for my first paid project.
+For my first paid project, I am very proud of the effort I gave. I'm also very thankful for the opportunity to create something that the world can use.
