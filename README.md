@@ -1,5 +1,4 @@
-# Project title
-Luminous Personnel
+# Luminous Personnel - a staffing agency company website
 
 # Project Description
 
