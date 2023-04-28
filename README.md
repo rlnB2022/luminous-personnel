@@ -8,7 +8,7 @@ A startup job-placement company reached out to me to create an online prescence.
 
 # Technologies Used
 
-This project is created with:
+This project was created with the following tech:
 
 * HTML 5
 * CSS 3
