@@ -21,7 +21,7 @@ The main difficulty with this project was the timeframe needed to complete, alon
 
 # Solutions / What I learned
 
-Since I was very new to front-end development, I utilized Google, StackOverflow and the MDN Web documentation. Not only did I solve the problems I ran across, I was able to learn along the way. A year later and I have reworked the website to be mobile-friendly first. It's amazing how much I've grown!
+Since I was very new to front-end development, I utilized Google, StackOverflow and the MDN Web documentation. Not only did I solve the problems I ran across, I was able to learn along the way. A year later (2020) and I have reworked the website to be mobile-friendly first.
 
 # Takeaways
 
